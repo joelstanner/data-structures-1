@@ -204,7 +204,7 @@ class BinaryTree(object):
         return self
 
     def _make_balanced_tree(self, value_list):
-        """takes an ordered list of values, then reconstructs our tree 
+        """takes an ordered list of values, then reconstructs our tree
         so that it's balanced"""
         try:
             self.root = Tnode(val=value_list[len(value_list)/2])
@@ -232,7 +232,7 @@ if __name__ == '__main__':
 
     timer = time()
     t.contains(8)
-    print "worst performance: "+str(time() - timer)
+    print("worst performance: "+str(time() - timer))
 
     t = BinaryTree()
     t.insert(5)
@@ -245,4 +245,4 @@ if __name__ == '__main__':
 
     timer = time()
     t.contains(8)
-    print "best performance: "+str(time() - timer)
+    print("best performance: " + str(time() - timer))
